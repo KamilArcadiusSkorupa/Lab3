@@ -1,0 +1,20 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+    int _count = 0;
+
+    ifstream infile ("textfile1.txt");
+    int num;
+
+    while (infile >> num) {
+    cout << num << endl;
+    _count++;
+}
+    cout << "The count of number is " << _count<<endl;
+
+return 0;
+}
